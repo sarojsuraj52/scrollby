@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar with Sidebar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="left-sidebar">
+      <div class="sidebar-logo">
+        <a href="#" class="logo"><i class="fa-brands fa-slack"></i></a>
+      </div>
+      <ul class="sidebar-menu">
+        <li>
+          <a href="#"><i class="fas fa-home"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-user"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-cog"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar">
+      <button class="toggle-sidebar"><i class="fas fa-bars"></i></button>
+      <div class="scrollby-menu">
+        <ol>
+          <li>tos setup</li>
+          <li>CTP phases & classes</li>
+          <li>Termination</li>
+          <li>Governing Law</li>
+          <li>Changes</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="content">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-search">
+            <form>
+              <input type="text" placeholder="Search" />
+              <button type="submit" class="search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="navbar-right">
+            <a href="#" class="profile-icon"><i class="fas fa-user"></i></a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="main-content">
+        <!-- tos setup -->
+        <div class="tos-setup">
+          <h1 id="tos-setup">tos setup KB - RM</h1>
+          <p>
+            Note that some requirements may vary depending on the specific
+            features or complexity of the system
+          </p>
+          <br />
+
+          <p>
+            These are basic system requirements and could change based on the
+            specific LMS software and its functionalities. Additionally, the
+            software's performance could also depend on network traffic, the
+            amount of data stored, number of simultaneous users, and server
+            specifications in the case of an online LMS.
+          </p>
+          <br />
+          <h2>Basic System Requirements:</h2>
+          <br />
+          <section class="basic-system-requirement-table">
+            <!-- offline requirement tale -->
+            <table>
+              <tr>
+                <td>Offline LMS Requirements</td>
+                <td>Details</td>
+              </tr>
+              <tr>
+                <td>Operating System</td>
+                <td>Compatible with multiple OS (Windows, Mac, Linux)</td>
+              </tr>
+              <tr>
+                <td>Processor</td>
+                <td>Minimum 2 GHz</td>
+              </tr>
+              <tr>
+                <td>RAM</td>
+                <td>Minimum 4 GB</td>
+              </tr>
+              <tr>
+                <td>Hard Drive</td>
+                <td>Minimum 20 GB available space</td>
+              </tr>
+              <tr>
+                <td>Graphics</td>
+                <td>DirectX 9.0c compatible graphics card</td>
+              </tr>
+              <tr>
+                <td>Internet Connection</td>
+                <td>
+                  Not required for offline use, but necessary for updates and
+                  syncing with the online version
+                </td>
+              </tr>
+              <tr>
+                <td>Screen Resolution</td>
+                <td>1024 x 768 or higher</td>
+              </tr>
+              <tr>
+                <td>Software Requirements</td>
+                <td>
+                  Database software (e.g., MySQL, PostgreSQL), Latest Web
+                  browser for initial setup and updates
+                </td>
+              </tr>
+              <tr>
+                <td>Special Features</td>
+                <td>
+                  Downloadable content for offline access, Syncing capabilities
+                  when online
+                </td>
+              </tr>
+            </table>
+            <!-- online requirement table -->
+            <br />
+            <table>
+              <tr>
+                <td>Online LMS Requirements</td>
+                <td>Details</td>
+              </tr>
+              <tr>
+                <td>Operating System</td>
+                <td>Any with a latest web browser</td>
+              </tr>
+              <tr>
+                <td>Internet Connection</td>
+                <td>Stable internet, minimum 1 Mbps speed recommended</td>
+              </tr>
+              <tr>
+                <td>Screen Resolution</td>
+                <td>1024 x 768 or higher</td>
+              </tr>
+              <tr>
+                <td>Browser</td>
+                <td>
+                  Latest version of Google Chrome, Mozilla Firefox, Safari, or
+                  Edge
+                </td>
+              </tr>
+              <tr>
+                <td>Plug-ins/Extensions</td>
+                <td>PDF reader, Flash player (if required)</td>
+              </tr>
+              <tr>
+                <td>Cookies & JavaScript</td>
+                <td>Enabled</td>
+              </tr>
+              <tr>
+                <td>Special Features</td>
+                <td>
+                  Real-time collaboration, Online assessments, Web-based content
+                  and video streaming
+                </td>
+              </tr>
+            </table>
+          </section>
+          <br />
+          <br />
+          <!-- Server specifications for hosting an online LMS -->
+          <section>
+            <h1>Server specifications for hosting an online LMS</h1>
+            <p>
+              here are server specifications for hosting an online LMS. The
+              exact requirements can significantly vary based on the number of
+              users, the complexity of the system, and the overall size of the
+              data to be managed. These are general requirements and the
+              specific system and software used may alter these specifications.
+              Also, it's important to factor in scalability as user numbers
+              increase.
+            </p>
+            <br />
+            <!-- table for server offline server  -->
+            <table>
+              <tr>
+                <td>Server Requirements</td>
+                <td>Details</td>
+              </tr>
+              <tr>
+                <td>Operating System</td>
+                <td>Linux (Ubuntu, CentOS), Windows Server</td>
+              </tr>
+              <tr>
+                <td>Processor</td>
+                <td>Quad Core 2.5 GHz or higher</td>
+              </tr>
+              <tr>
+                <td>RAM</td>
+                <td>16 GB or higher</td>
+              </tr>
+              <tr>
+                <td>Hard Drive</td>
+                <td>100 GB or higher SSD</td>
+              </tr>
+              <tr>
+                <td>Database</td>
+                <td>MySQL, MariaDB, PostgreSQL, SQL Server)</td>
+              </tr>
+              <tr>
+                <td>Web Server</td>
+                <td>Apache, Nginx, Microsoft IIS</td>
+              </tr>
+              <tr>
+                <td>PHP (for PHP-based LMS)</td>
+                <td>PHP 7.4 or higher</td>
+              </tr>
+              <tr>
+                <td>Java (for Java-based LMS)</td>
+                <td>Java 8 or higher</td>
+              </tr>
+              <tr>
+                <td>Network</td>
+                <td>1 Gbps or higher, depending on the number of users</td>
+              </tr>
+              <tr>
+                <td>Firewall</td>
+                <td>Configured to allow necessary LMS traffic</td>
+              </tr>
+              <tr>
+                <td>Backup</td>
+                <td>Regular backup system in place</td>
+              </tr>
+              <tr>
+                <td>SSL Certificate</td>
+                <td>To enable HTTPS for secure connections</td>
+              </tr>
+              <tr>
+                <td>Load Balancing</td>
+                <td>
+                  If handling high numbers of users, consider a load balancer
+                  for distributing network traffic
+                </td>
+              </tr>
+            </table>
+          </section>
+          <br />
+          <br />
+
+          <!-- offline server requirement -->
+          <section>
+            <h1>Offline LMS Server Requirements</h1>
+            <p>
+              In this setup, users would need to be on the institution's local
+              network (e.g., connected to the institution's WiFi or physically
+              connected to the network) to access the LMS. Note that because
+              users are not accessing the LMS over the internet, SSL
+              certificates and load balancing are not typically necessary.
+              However, if the LMS is to be accessed over a VPN or similar
+              network setup, additional security measures and network capacity
+              may be needed.
+            </p>
+            <br />
+            <!-- table for offline LMS Server requirement -->
+            <table>
+              <tr>
+                <td>Offline LMS Server Requirements</td>
+                <td>Details</td>
+              </tr>
+              <tr>
+                <td>Operating System</td>
+                <td>
+                  Operating System Windows Server or Linux (Ubuntu, CentOS)
+                </td>
+              </tr>
+              <tr>
+                <td>Processor</td>
+                <td>Quad Core 2.0 GHz or higher</td>
+              </tr>
+              <tr>
+                <td>RAM</td>
+                <td>8 GB or higher</td>
+              </tr>
+              <tr>
+                <td>Hard Drive</td>
+                <td>100 GB or higher, SSD recommended</td>
+              </tr>
+              <tr>
+                <td>Database</td>
+                <td>MySQL, MariaDB, PostgreSQL, SQL Server</td>
+              </tr>
+              <tr>
+                <td>Web Server</td>
+                <td>Apache, Nginx, Microsoft IIS</td>
+              </tr>
+              <tr>
+                <td>PHP (for PHP-based LMS)</td>
+                <td>PHP 7.4 or higher</td>
+              </tr>
+              <tr>
+                <td>Network /td></td>
+                <td>100 Mbps or higher, depending on the number of users<</td>
+              </tr>
+              <tr>
+                <td>Firewall</td>
+                <td>Configured to allow necessary local LMS traffic</td>
+              </tr>
+
+              <tr>
+                <td>Backup</td>
+                <td>Regular backup system in place</td>
+              </tr>
+            </table>
+          </section>
+          <br />
+          <br />
+
+          <!-- ispringlearn template -->
+          <section>
+            <h1>ispringlearn template</h1>
+            <br />
+            <!-- Supported Content Types -->
+            <table>
+              <tr>
+                <td>Supported Content Types</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>SCORM packages</td>
+                <td>(1.2 or 2004 R2, R3, R4), ZIP</td>
+              </tr>
+              <tr>
+                <td>Video</td>
+                <td>FLV, MP4</td>
+              </tr>
+              <tr>
+                <td>Reference documents</td>
+                <td>DOC/XLS/PDF/PPT</td>
+              </tr>
+              <tr>
+                <td>Audio</td>
+                <td>MP3</td>
+              </tr>
+              <tr>
+                <td>Presentations</td>
+                <td>iSpring Suite 8.7 and higher</td>
+              </tr>
+              <tr>
+                <td>Quizzes and surveys</td>
+                <td>iSpring QuizMaker 8.7 and higher</td>
+              </tr>
+              <tr>
+                <td>Dialog simulations</td>
+                <td>iSpring TalkMaster 8.7 and higher</td>
+              </tr>
+              <tr>
+                <td>Interactions</td>
+                <td>iSpring Visuals 8.7 and higher</td>
+              </tr>
+              <tr>
+                <td>Course size</td>
+                <td>not more than 2 GB</td>
+              </tr>
+            </table>
+            <br />
+            <br />
+            <!-- table for hardware -->
+            <table>
+              <tr>
+                <td>Hardware</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Computer and processor</td>
+                <td>Intel/AMD 1 GHz or faster</td>
+              </tr>
+              <tr>
+                <td>Memory</td>
+                <td>1024 MB RAM, 2 GB recommended</td>
+              </tr>
+              <tr>
+                <td>Hard disk</td>
+                <td>500 MB available disk space</td>
+              </tr>
+              <tr>
+                <td>Display</td>
+                <td>Monitor resolution 1024x768 or higher</td>
+              </tr>
+              <tr>
+                <td>Color depth</td>
+                <td>32 bits and higher</td>
+              </tr>
+            </table>
+            <br />
+            <br />
+            <!-- table for software -->
+            <table>
+              <tr>
+                <td>Software</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Operating system</td>
+                <td>
+                  Microsoft Windows 10/8/7/Vista/XP (SP 3) (32- and 64-bit
+                  editions)
+                </td>
+              </tr>
+              <tr>
+                <td>Microsoft PowerPoint</td>
+                <td>
+                  Microsoft PowerPoint 2007/2010/2013/2016/2019/ Microsoft
+                  Office 365 subscription (32- and 64-bit editions)
+                </td>
+              </tr>
+              <tr>
+                <td>Browser</td>
+                <td>
+                  Microsoft Edge 87.0 and higher Mozilla Firefox 74.0 and higher
+                  Google Chrome 87.0 and higher Opera 11.6 or higher
+                </td>
+              </tr>
+            </table>
+          </section>
+        </div>
+
+        <!--  CTP phases & classes-->
+        <div>
+            <h1 id="ctp-phases-&-classes">CTP phases & classes</h1>
+            <section>
+
+            </section>
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec elit
+          vel urna condimentum accumsan. Nulla sed eros vitae erat lobortis
+          pulvinar. Vivamus ultricies mi ut neque ultricies, sit amet varius
+          felis rhoncus. Ut vitae magna eget felis convallis pulvinar. Nam
+          consequat arcu sit amet orci viverra, vitae pharetra magna consequat.
+          Fusce a libero at ante consectetur dapibus. Curabitur sit amet odio a
+          augue interdum faucibus. Sed semper, mi sit amet sagittis vulputate,
+          nisl tellus efficitur dui, sed interdum metus arcu et enim. Integer
+          fringilla nulla a libero tristique, nec posuere justo posuere.
+          Phasellus eu mollis quam, vel viverra magna. Nulla vestibulum tellus
+          at lectus hendrerit, at tincidunt lacus molestie. Curabitur quis
+          fringilla metus. Donec non nulla nec turpis dictum efficitur. Aliquam
+          posuere ultrices quam vel varius. Proin id lacus et tortor fermentum
+          consectetur. Quisque vehicula tincidunt metus, id fringilla est
+          tincidunt a. Nullam pulvinar quam et metus mattis, eu eleifend nulla
+          venenatis. Vestibulum et est sed lorem tempor eleifend. Mauris eget
+          vestibulum justo. Integer id dolor risus. Cras ullamcorper, velit
+          vitae finibus feugiat, mi magna congue nunc, vitae posuere enim turpis
+          sed lectus. Vivamus at arcu nec ante interdum dignissim non vitae
+          augue. Morbi non quam vitae ligula dapibus lobortis ac nec velit.
+          Curabitur vestibulum fermentum ultrices. Integer aliquam risus tortor,
+          vel efficitur ex accumsan vitae. In vestibulum urna vitae orci
+          vehicula, vitae varius elit mollis. Ut pulvinar nulla magna, id mattis
+          orci interdum vel. Duis at consequat est. Quisque vehicula tincidunt
+          metus, id fringilla est tincidunt a. Nullam pulvinar quam et metus
+          mattis, eu eleifend nulla venenatis. Vestibulum et est sed lorem
+          tempor eleifend. Mauris eget vestibulum justo. Integer id dolor risus.
+          Cras ullamcorper, velit vitae finibus feugiat, mi magna congue nunc,
+          vitae posuere enim turpis sed lectus. Vivamus at arcu nec ante
+          interdum dignissim non vitae augue. Morbi non quam vitae ligula
+          dapibus lobortis ac nec velit. Curabitur vestibulum fermentum
+          ultrices. Integer aliquam risus tortor, vel efficitur ex accumsan
+          vitae. In vestibulum urna vitae orci vehicula, vitae varius elit
+          mollis. Ut pulvinar nulla magna, id mattis orci interdum vel. Duis at
+          consequat est. Sed semper, libero non fermentum convallis, nunc nulla
+          sodales tellus, nec viverra leo enim non justo. Duis vel ante et risus
+          fermentum sollicitudin. Aliquam id tempor libero, a dictum sem. Nam id
+          turpis quis ante feugiat lacinia. Pellentesque sit amet sapien libero.
+          Nulla efficitur augue eget est dignissim, ac vestibulum felis blandit.
+          Fusce id felis in turpis mollis vulputate. Integer nec nisi a eros
+          viverra feugiat. Cras sit amet ante sit amet ipsum ullamcorper
+          vulputate nec sit amet nulla. Mauris vitae risus in lectus fringilla
+          fermentum eu sed metus. Nulla et pharetra turpis. Ut euismod velit
+          felis, nec egestas mauris rhoncus id. Nullam malesuada tellus non
+          lorem lobortis rhoncus. Nullam auctor nunc et eros ullamcorper, at
+          auctor nisi dictum. Nullam nec magna sit amet dui congue pellentesque.
+          Proin in arcu vitae tortor ultrices suscipit sed sit amet felis.
+          Nullam id laoreet enim. Ut sagittis eros sit amet magna aliquet, non
+          facilisis metus varius. Nulla at neque a dui varius elementum non sed
+          metus. Curabitur commodo fringilla tortor, eget volutpat felis varius
+          vel. Maecenas elementum mauris a dui iaculis, a venenatis enim
+          vulputate. Nulla eget vehicula neque, id malesuada quam. Pellentesque
+          vehicula tortor sit amet ligula faucibus, ac vehicula est vehicula.
+          Pellentesque id sodales elit. Nullam lobortis augue id ante pharetra
+          posuere. Donec feugiat mi in velit feugiat tincidunt. Donec
+          sollicitudin libero vitae neque commodo scelerisque. Suspendisse
+          potenti.
+        </p>
+        <h1 id="termination">Termination</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec elit
+          vel urna condimentum accumsan. Nulla sed eros vitae erat lobortis
+          pulvinar. Vivamus ultricies mi ut neque ultricies, sit amet varius
+          felis rhoncus. Ut vitae magna eget felis convallis pulvinar. Nam
+          consequat arcu sit amet orci viverra, vitae pharetra magna consequat.
+          Fusce a libero at ante consectetur dapibus. Curabitur sit amet odio a
+          augue interdum faucibus. Sed semper, mi sit amet sagittis vulputate,
+          nisl tellus efficitur dui, sed interdum metus arcu et enim. Integer
+          fringilla nulla a libero tristique, nec posuere justo posuere.
+          Phasellus eu mollis quam, vel viverra magna. Nulla vestibulum tellus
+          at lectus hendrerit, at tincidunt lacus molestie. Curabitur quis
+          fringilla metus. Donec non nulla nec turpis dictum efficitur. Aliquam
+          posuere ultrices quam vel varius. Proin id lacus et tortor fermentum
+          consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed nec elit vel urna condimentum accumsan. Nulla sed eros vitae erat
+          lobortis pulvinar. Vivamus ultricies mi ut neque ultricies, sit amet
+          varius felis rhoncus. Ut vitae magna eget felis convallis pulvinar.
+          Nam consequat arcu sit amet orci viverra, vitae pharetra magna
+          consequat. Fusce a libero at ante consectetur dapibus. Curabitur sit
+          amet odio a augue interdum faucibus. Sed semper, mi sit amet sagittis
+          vulputate, nisl tellus efficitur dui, sed interdum metus arcu et enim.
+          Integer fringilla nulla a libero tristique, nec posuere justo posuere.
+          Phasellus eu mollis quam, vel viverra magna. Nulla vestibulum tellus
+          at lectus hendrerit, at tincidunt lacus molestie. Curabitur quis
+          fringilla metus. Donec non nulla nec turpis dictum efficitur. Aliquam
+          posuere ultrices quam vel varius. Proin id lacus et tortor fermentum
+          consectetur. Quisque vehicula tincidunt metus, id fringilla est
+          tincidunt a. Nullam pulvinar quam et metus mattis, eu eleifend nulla
+          venenatis. Vestibulum et est sed lorem tempor eleifend. Mauris eget
+          vestibulum justo. Integer id dolor risus. Cras ullamcorper, velit
+          vitae finibus feugiat, mi magna congue nunc, vitae posuere enim turpis
+          sed lectus. Vivamus at arcu nec ante interdum dignissim non vitae
+          augue. Morbi non quam vitae ligula dapibus lobortis ac nec velit.
+          Curabitur vestibulum fermentum ultrices. Integer aliquam risus tortor,
+          vel efficitur ex accumsan vitae. In vestibulum urna vitae orci
+          vehicula, vitae varius elit mollis. Ut pulvinar nulla magna, id mattis
+          orci interdum vel. Duis at consequat est. Sed semper, libero non
+          fermentum convallis, nunc nulla sodales tellus, nec viverra leo enim
+          non justo. Duis vel ante et risus fermentum sollicitudin. Aliquam id
+          tempor libero, a dictum sem. Nam id turpis quis ante feugiat lacinia.
+          Pellentesque sit amet sapien libero. Nulla efficitur augue eget est
+          dignissim, ac vestibulum felis blandit. Fusce id felis in turpis
+          mollis vulputate. Integer nec nisi a eros viverra feugiat. Cras sit
+          amet ante sit amet ipsum ullamcorper vulputate nec sit amet nulla.
+          Mauris vitae risus in lectus fringilla fermentum eu sed metus. Nulla
+          et pharetra turpis. Ut euismod velit felis, nec egestas mauris rhoncus
+          id. Nullam malesuada tellus non lorem lobortis rhoncus. Nullam auctor
+          nunc et eros ullamcorper, at auctor nisi dictum. Nullam nec magna sit
+          amet dui congue pellentesque. Proin in arcu vitae tortor ultrices
+          suscipit sed sit amet felis. Nullam id laoreet enim. Ut sagittis eros
+          sit amet magna aliquet, non facilisis metus varius. Nulla at neque a
+          dui varius elementum non sed metus. Curabitur commodo fringilla
+          tortor, eget volutpat felis varius vel. Maecenas elementum mauris a
+          dui iaculis, a venenatis enim vulputate. Nulla eget vehicula neque, id
+          malesuada quam. Pellentesque vehicula tortor sit amet ligula faucibus,
+          ac vehicula est vehicula. Pellentesque id sodales elit. Nullam
+          lobortis augue id ante pharetra posuere. Donec feugiat mi in velit
+          feugiat tincidunt. Donec sollicitudin libero vitae neque commodo
+          scelerisque. Suspendisse potenti. Nullam auctor nunc et eros
+          ullamcorper, at auctor nisi dictum. Nullam nec magna sit amet dui
+          congue pellentesque. Proin in arcu vitae tortor ultrices suscipit sed
+          sit amet felis. Nullam id laoreet enim. Ut sagittis eros sit amet
+          magna aliquet, non facilisis metus varius. Nulla at neque a dui varius
+          elementum non sed metus. Curabitur commodo fringilla tortor, eget
+          volutpat felis varius vel. Maecenas elementum mauris a dui iaculis, a
+          venenatis enim vulputate. Nulla eget vehicula neque, id malesuada
+          quam. Pellentesque vehicula tortor sit amet ligula faucibus, ac
+          vehicula est vehicula. Pellentesque id sodales elit. Nullam lobortis
+          augue id ante pharetra posuere. Donec feugiat mi in velit feugiat
+          tincidunt. Donec sollicitudin libero vitae neque commodo scelerisque.
+          Suspendisse potenti.
+        </p>
+        <h1 id="governing-law">Governing Law</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec elit
+          vel urna condimentum accumsan. Nulla sed eros vitae erat lobortis
+          pulvinar. Vivamus ultricies mi ut neque ultricies, sit amet varius
+          felis rhoncus. Ut vitae magna eget felis convallis pulvinar. Nam
+          consequat arcu sit amet orci viverra, vitae pharetra magna consequat.
+          Fusce a libero at ante consectetur dapibus. Curabitur sit amet odio a
+          augue interdum faucibus. Sed semper, mi sit amet sagittis vulputate,
+          nisl tellus efficitur dui, sed interdum metus arcu et enim. Integer
+          fringilla nulla a libero tristique, nec posuere justo posuere.
+          Phasellus eu mollis quam, vel viverra magna. Nulla vestibulum tellus
+          at lectus hendrerit, at tincidunt lacus molestie. Curabitur quis
+          fringilla metus. Donec non nulla nec turpis dictum efficitur. Aliquam
+          posuere ultrices quam vel varius. Proin id lacus et tortor fermentum
+          consectetur. Quisque vehicula tincidunt metus, id fringilla est
+          tincidunt a. Nullam pulvinar quam et metus mattis, eu eleifend nulla
+          venenatis. Vestibulum et est sed lorem tempor eleifend. Mauris eget
+          vestibulum justo. Integer id dolor risus. Cras ullamcorper, velit
+          vitae finibus feugiat, mi magna congue nunc, vitae posuere enim turpis
+          sed lectus. Vivamus at arcu nec ante interdum dignissim non vitae
+          augue. Morbi non quam vitae ligula dapibus lobortis ac nec velit.
+          Curabitur vestibulum fermentum ultrices. Integer aliquam risus tortor,
+          vel efficitur ex accumsan vitae. In vestibulum urna vitae orci
+          vehicula, vitae varius elit mollis. Ut pulvinar nulla magna, id mattis
+          orci interdum vel. Duis at consequat est. Sed semper, libero non
+          fermentum convallis, nunc nulla sodales tellus, nec viverra leo enim
+          non justo. Duis vel ante et risus fermentum sollicitudin. Aliquam id
+          tempor libero, a dictum sem. Nam id turpis quis ante feugiat lacinia.
+          Pellentesque sit amet sapien libero. Nulla efficitur augue eget est
+          dignissim, ac vestibulum felis blandit. Fusce id felis in turpis
+          mollis vulputate. Integer nec nisi a eros viverra feugiat. Cras sit
+          amet ante sit amet ipsum ullamcorper vulputate nec sit amet nulla.
+          Mauris vitae risus in lectus fringilla fermentum eu sed metus. Nulla
+          et pharetra turpis. Ut euismod velit felis, nec egestas mauris rhoncus
+          id. Nullam malesuada tellus non lorem lobortis rhoncus. Nullam auctor
+          nunc et eros ullamcorper, at auctor nisi dictum. Nullam nec magna sit
+          amet dui congue pellentesque. Proin in arcu vitae tortor ultrices
+          suscipit sed sit amet felis. Nullam id laoreet enim. Ut sagittis eros
+          sit amet magna aliquet, non facilisis metus varius. Nulla at neque a
+          dui varius elementum non sed metus. Curabitur commodo fringilla
+          tortor, eget volutpat felis varius vel. Maecenas elementum mauris a
+          dui iaculis, a venenatis enim vulputate. Nulla eget vehicula neque, id
+          malesuada quam. Pellentesque vehicula tortor sit amet ligula faucibus,
+          ac vehicula est vehicula. Pellentesque id sodales elit. Nullam
+          lobortis augue id ante pharetra posuere. Donec feugiat mi in velit
+          feugiat tincidunt. Donec sollicitudin libero vitae neque commodo
+          scelerisque. Suspendisse potenti. Nullam auctor nunc et eros
+          ullamcorper, at auctor nisi dictum. Nullam nec magna sit amet dui
+          congue pellentesque. Proin in arcu vitae tortor ultrices suscipit sed
+          sit amet felis. Nullam id laoreet enim. Ut sagittis eros sit amet
+          magna aliquet, non facilisis metus varius. Nulla at neque a dui varius
+          elementum non sed metus. Curabitur commodo fringilla tortor, eget
+          volutpat felis varius vel. Maecenas elementum mauris a dui iaculis, a
+          venenatis enim vulputate. Nulla eget vehicula neque, id malesuada
+          quam. Pellentesque vehicula tortor sit amet ligula faucibus, ac
+          vehicula est vehicula. Pellentesque id sodales elit. Nullam lobortis
+          augue id ante pharetra posuere. Donec feugiat mi in velit feugiat
+          tincidunt. Donec sollicitudin libero vitae neque commodo scelerisque.
+          Suspendisse potenti.
+        </p>
+        <h1 id="changes">Changes</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec elit
+          vel urna condimentum accumsan. Nulla sed eros vitae erat lobortis
+          pulvinar. Vivamus ultricies mi ut neque ultricies, sit amet varius
+          felis rhoncus. Ut vitae magna eget felis convallis pulvinar. Nam
+          consequat arcu sit amet orci viverra, vitae pharetra magna consequat.
+          Fusce a libero at ante consectetur dapibus. Curabitur sit amet odio a
+          augue interdum faucibus. Sed semper, mi sit amet sagittis vulputate,
+          nisl tellus efficitur dui, sed interdum metus arcu et enim. Integer
+          fringilla nulla a libero tristique, nec posuere justo posuere.
+          Phasellus eu mollis quam, vel viverra magna. Nulla vestibulum tellus
+          at lectus hendrerit, at tincidunt lacus molestie. Curabitur quis
+          fringilla metus. Donec non nulla nec turpis dictum efficitur. Aliquam
+          posuere ultrices quam vel varius. Proin id lacus et tortor fermentum
+          consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed nec elit vel urna condimentum accumsan. Nulla sed eros vitae erat
+          lobortis pulvinar. Vivamus ultricies mi ut neque ultricies, sit amet
+          varius felis rhoncus. Ut vitae magna eget felis convallis pulvinar.
+          Nam consequat arcu sit amet orci viverra, vitae pharetra magna
+          consequat. Fusce a libero at ante consectetur dapibus. Curabitur sit
+          amet odio a augue interdum faucibus. Sed semper, mi sit amet sagittis
+          vulputate, nisl tellus efficitur dui, sed interdum metus arcu et enim.
+          Integer fringilla nulla a libero tristique, nec posuere justo posuere.
+          Phasellus eu mollis quam, vel viverra magna. Nulla vestibulum tellus
+          at lectus hendrerit, at tincidunt lacus molestie. Curabitur quis
+          fringilla metus. Donec non nulla nec turpis dictum efficitur. Aliquam
+          posuere ultrices quam vel varius. Proin id lacus et tortor fermentum
+          consectetur. Quisque vehicula tincidunt metus, id fringilla est
+          tincidunt a. Nullam pulvinar quam et metus mattis, eu eleifend nulla
+          venenatis. Vestibulum et est sed lorem tempor eleifend. Mauris eget
+          vestibulum justo. Integer id dolor risus. Cras ullamcorper, velit
+          vitae finibus feugiat, mi magna congue nunc, vitae posuere enim turpis
+          sed lectus. Vivamus at arcu nec ante interdum dignissim non vitae
+          augue. Morbi non quam vitae ligula dapibus lobortis ac nec velit.
+          Curabitur vestibulum fermentum ultrices. Integer aliquam risus tortor,
+          vel efficitur ex accumsan vitae. In vestibulum urna vitae orci
+          vehicula, vitae varius elit mollis. Ut pulvinar nulla magna, id mattis
+          orci interdum vel. Duis at consequat est. Sed semper, libero non
+          fermentum convallis, nunc nulla sodales tellus, nec viverra leo enim
+          non justo. Duis vel ante et risus fermentum sollicitudin. Aliquam id
+          tempor libero, a dictum sem. Nam id turpis quis ante feugiat lacinia.
+          Pellentesque sit amet sapien libero. Nulla efficitur augue eget est
+          dignissim, ac vestibulum felis blandit. Fusce id felis in turpis
+          mollis vulputate. Integer nec nisi a eros viverra feugiat. Cras sit
+          amet ante sit amet ipsum ullamcorper vulputate nec sit amet nulla.
+          Mauris vitae risus in lectus fringilla fermentum eu sed metus. Nulla
+          et pharetra turpis. Ut euismod velit felis, nec egestas mauris rhoncus
+          id. Nullam malesuada tellus non lorem lobortis rhoncus. Nullam auctor
+          nunc et eros ullamcorper, at auctor nisi dictum. Nullam nec magna sit
+          amet dui congue pellentesque. Proin in arcu vitae tortor ultrices
+          suscipit sed sit amet felis. Nullam id laoreet enim. Ut sagittis eros
+          sit amet magna aliquet, non facilisis metus varius. Nulla at neque a
+          dui varius elementum non sed metus. Curabitur commodo fringilla
+          tortor, eget volutpat felis varius vel. Maecenas elementum mauris a
+          dui iaculis, a venenatis enim vulputate. Nulla eget vehicula neque, id
+          malesuada quam. Pellentesque vehicula tortor sit amet ligula faucibus,
+          ac vehicula est vehicula. Pellentesque id sodales elit. Nullam
+          lobortis augue id ante pharetra posuere. Donec feugiat mi in velit
+          feugiat tincidunt. Donec sollicitudin libero vitae neque commodo
+          scelerisque. Suspendisse potenti.
+        </p>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

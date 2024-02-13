@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* to prevent horizontal scrollbar */
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: left 0.3s ease, width 0.3s ease; 
+  overflow-y: auto;
+  padding-top: 60px; 
+  margin-left: 60px;
+}
+
+.sidebar.active {
+  width: 120px;
+}
+
+.sidebar-logo {
+  padding: 20px 0;
+}
+
+.sidebar-logo .logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 10px;
+}
+
+.sidebar-menu li {
+  padding: 10px;
+}
+
+.sidebar-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-menu a i {
+  margin-right: 10px;
+}
+
+.menu-text {
+  display: block;
+}
+
+.toggle-sidebar {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+}
+
+.content {
+  margin-left: 310px; 
+  transition: margin-left 0.3s ease; 
+}
+
+.sidebar.active ~ .content {
+  margin-left: 180px; /* Adjust margin when sidebar is active */
+}
+
+.navbar {
+  background-color: #333;
+  padding: 12px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-search {
+  margin-left: 20px;
+}
+
+.navbar-search input[type="text"] {
+  padding: 5px;
+  width: 200px;
+  outline: none;
+}
+
+.navbar-search .search-btn {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-right {
+  margin-right: 20px;
+}
+
+.logo,
+.profile-icon {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 12px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logo:hover,
+.profile-icon:hover {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #333;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.scrollby-menu {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.scrollby-menu ol {
+  list-style-type: none;
+  counter-reset: my-counter; /* Reset the counter */
+  padding-left: 12px; /* Add padding to align the numbers */
+}
+
+/* Style the list items */
+ol li {
+  counter-increment: my-counter; /* Increment the counter */
+  margin-bottom: 10px; /* Add some spacing between list items */
+  cursor: pointer;
+  padding: 5px 0;
+  
+}
+
+/* Style the numbering */
+ol li::before {
+  content: counter(my-counter); /* Use the counter as content */
+  padding: 6px; 
+  border-radius: 4px; /* Add border radius to numbering */
+}
+
+.scrollby-menu ol li:hover {
+  background-color: #f0f0f0; 
+  color: #333;
+}
+
+.main-content h1{
+    margin-bottom: 0.5rem;
+}
+
+.main-content h1:not(:first-child) {
+    margin-top: 1.5rem; 
+}
+
+
+.left-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60px; /* Adjust width as needed */
+    background-color: #333; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    /* padding-right: 10px; */
+    border-right: 1px solid #fff;
+  }
+  
+  .left-sidebar button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px; 
+    cursor: pointer;
+  }
+  
+  .left-sidebar button:hover {
+    color: #ff0; 
+  }
+  
+ table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 750px;
+  }
+  
+ table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100px;
+  }
+
+  .sidebar-menu li {
+    padding: 10px 5px;
+  }
+
+  .menu-text {
+    display: none;
+  }
+
+  .content {
+    margin-left: 160px;
+  }
+}
